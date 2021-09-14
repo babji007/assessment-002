@@ -1,4 +1,3 @@
-
 function productReducer(state = [], action) {
     switch (action.type) {
         case 'ADD_PRODUCT':

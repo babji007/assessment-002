@@ -6,6 +6,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import { Provider } from 'react-redux';
+import EmpList from './components/EmpList';
+import Store from './Store/Store';
+import ListProduct from './components/ListProduct';
 
 
 // import AddProduct from './components/AddProduct';
@@ -13,18 +16,20 @@ import { Provider } from 'react-redux';
 function App() {
   return (
 
+    
     <Provider   store={Store}>
     <Router>
     <div>
     <Header/>
 
-    <List/>
+    {/* <List/> */}
+    <ListProduct/>
     
 
     <Switch>
-          {/* <Route exact path='/' component={Home} /> */} 
-          {/* <Route exact path='/emplist' component={EmpList} />
-          {/* <Route exact path='/addproduct' component={AddProduct} />  */}
+          {/* <Route exact path='/' component={Home} />  */}
+           <Route exact path='/emplist' component={EmpList} />
+           {/* <Route exact path='/addproduct' component={AddPr} />  */}
              
        </Switch>
         
@@ -32,8 +37,8 @@ function App() {
     </div>
     </Router>
     </Provider>
+    
   );
 }
 
 export default App;
-

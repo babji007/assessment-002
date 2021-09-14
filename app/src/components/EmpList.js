@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import { addEmployee } from '../actions/EmployeeActions';
 // import { connect } from 'react-redux';
-import EmployeeService from '../services/EmpServices';
+// import EmployeeService from '../services/EmpServices';
  class EmpList extends Component {
 
 
